@@ -29,7 +29,7 @@ def main()->None:
 
 
 def is_even(number:int)->bool:
-    return True if number % 2 == 0 else False
+    return number % 2 == 0
 
 
 
