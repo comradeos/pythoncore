@@ -22,3 +22,17 @@ print()
 
 
 print('meow\n' * 3)
+
+
+print('-' * 70)
+
+
+while True:
+    n = int(input('What is n? ' ))
+    if n < 0:
+        continue
+    else:
+        break
+
+for i in range(n):
+    print('meow')
