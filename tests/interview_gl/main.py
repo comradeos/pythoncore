@@ -453,3 +453,22 @@ print('-'*50)
 
 
 
+# ITER NEXT
+
+class MyNumbers:
+    def __iter__(self):
+        self.a = 1
+        return self
+    
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+    
+nums = MyNumbers()
+print(iter(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
