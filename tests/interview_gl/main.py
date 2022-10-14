@@ -363,3 +363,37 @@ class OneMeta(ABCMeta):
     pass
 class TwoMeta(type):
     pass
+
+
+
+
+
+
+class AbstractOne(ABC):
+    @abstractmethod
+    def show(self):
+        pass
+    
+    
+class MyClassA(AbstractOne):
+    __private = 777
+    def __init__(self, a, b): 
+        self.a = a
+        self.b = b
+        pass
+    def show(self): 
+        print(self.a, self.b)
+        
+obj1 = MyClassA(111,222)
+obj1.show()
+print(obj1._MyClassA__private)
+
+class MyClassB(MyClassA):
+    def __init__(self, a, b):
+        super().__init__(a, b)
+
+
+b = MyClassB(3,5)
+# print(b._MyClassB__private) # ошибка
+
+
