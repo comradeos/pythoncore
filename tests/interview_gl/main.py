@@ -240,3 +240,35 @@ obj.show_dec()
 obj = A(222, 'world')
 obj.show_num()
 obj.show_word()
+
+
+
+
+
+
+
+
+
+
+class A2:
+    num = 231
+    def a(self): # метод объекта 
+        pass
+    
+    @classmethod
+    def b(cls): # метод класса
+        print(cls.num)
+        pass
+    
+    @staticmethod
+    def c(): 
+        print(31313)
+        pass
+    
+    
+a = A2()
+a.a()
+
+A2.b()
+A2.c()
+
