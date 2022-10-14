@@ -413,3 +413,24 @@ class Clownfish():
         print("The clownfish can swim backwards.")
     def skeleton(self):
         print("The clownfish's skeleton is made of bone.")
+
+
+
+
+
+class Mix1:
+    def text1(self):
+        print('Mix1')
+
+class Mix2:
+    def text(self):
+        print('Mix2')
+class Base:
+    def text(self):
+        print('Base')
+        
+class MyClass(Base, Mix1, Mix2):
+    pass
+
+obj = MyClass()
+obj.text1()
