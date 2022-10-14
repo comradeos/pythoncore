@@ -273,4 +273,26 @@ class B3(A3):
     pass
 
 a = A3()
-print(a.__some_value) # a._A3__some_value
+# print(a.__some_value) # a._A3__some_value
+
+
+
+
+print('-'*50)
+
+
+def dec_func(func):
+    def wrapper():
+        print(1)
+        print(2)
+        func()
+        print(3)
+        
+    return wrapper
+
+
+@dec_func
+def f1():
+    print('hello from f1()')
+
+f1()
