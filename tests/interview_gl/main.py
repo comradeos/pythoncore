@@ -472,3 +472,26 @@ print(next(nums))
 print(next(nums))
 print(next(nums))
 print(next(nums))
+
+
+
+
+
+
+# ГЕНЕРАТОРЫ
+
+list_1 = [i * 10 for i in range(10)]
+print(list_1)
+
+
+def next_cube():
+    number = 1
+    while True:
+        yield number**3
+        number += 1
+    
+counter = 0
+for i in next_cube():
+    print(i)
+    counter += 1
+    if counter > 10: break
