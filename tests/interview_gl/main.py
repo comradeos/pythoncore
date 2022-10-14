@@ -434,3 +434,22 @@ class MyClass(Base, Mix1, Mix2):
 
 obj = MyClass()
 obj.text1()
+
+
+print('-'*50)
+
+
+
+class A:pass
+class B(A):pass
+class C(A):pass
+class D(B,C):pass
+
+print(D.mro())
+
+
+print('-'*50)
+
+
+
+
