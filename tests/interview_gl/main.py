@@ -181,3 +181,62 @@ bubble(arr)
 # Установка элемента: O(1).
 # Удаление элемента: O(1).
 # Проход по словарю: O(n).
+
+
+
+class Person:
+  about = 'This class stores the name and age for a person'
+ 
+  def __init__(self, name, age):
+        self.name = name
+        self.age = age
+ 
+  def details(self):
+        print(f"Person's name is {self.name} and age is {self.age}")
+ 
+  @classmethod
+  def info(aaa):
+    print(aaa.about)
+ 
+ 
+Person.info()
+
+
+
+
+
+class A:
+    num:int
+    word:str
+    
+    def __init__(self, num_arg:int, word_arg:str)->None:
+        self.num = num_arg
+        self.word = word_arg
+        
+    def show_num(self)->None:
+        print(self.num)    
+    
+    def show_word(self)->None:
+        print(self.word)
+
+
+class B(A):
+    dec:float
+    
+    def __init__(self, num_arg:int, word_arg:str, dec_arg:float)->None:
+        super().__init__(num_arg, word_arg)
+        self.dec = dec_arg
+    
+    def show_dec(self)->None:
+        print(self.dec)
+
+
+
+obj = B(123, 'hello', 2.552)
+obj.show_num()
+obj.show_word()
+obj.show_dec()
+
+obj = A(222, 'world')
+obj.show_num()
+obj.show_word()
