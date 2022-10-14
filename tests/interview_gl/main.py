@@ -115,7 +115,7 @@ print(1 in [1,2,3])
 # хэш
 
 print(hash("hello"))
-
+print('\n\n\n')
 
 
 
@@ -144,7 +144,15 @@ def bubbleSort(arr):
     
 def bubble(arr):
     n = len(arr)
- 
+    for i in range(n-1):
+        for j in range(n-1-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    
+    print(arr)
+            
+    
 arr = [64, 34, 25, 12, 22, 11, 11, 90]
  
-bubbleSort(arr)
+# bubbleSort(arr)
+bubble(arr)
