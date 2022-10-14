@@ -37,12 +37,21 @@ some_func_3(421,221, a = 777, b = 45) # (12, 41232) {'a': 12, 'b': 234}
 
 
 
+
+
+
+
+# lambda
 some_list = [1,'s',2,'a',3, 'a']
 
 def check(item):
     return isinstance(item, str)
 
-some_list_filtered = filter(check, some_list) # list(filter(check, some_list)) - с
+some_list_filtered = filter(check, some_list) # list(filter(check, some_list))
 
 for i in some_list_filtered:
     print(i)
+    
+my_lambda = lambda x: x + 10
+
+print(my_lambda(12))
