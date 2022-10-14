@@ -281,6 +281,8 @@ a = A3()
 print('-'*50)
 
 
+# декоратор
+
 def dec_func(func):
     def wrapper():
         print(1)
@@ -290,9 +292,29 @@ def dec_func(func):
         
     return wrapper
 
-
 @dec_func
 def f1():
     print('hello from f1()')
 
 f1()
+
+
+
+# декоратор с аргументами
+
+def my_dec_args(func):
+    def wrapper(*args, **kwargs):
+        print(12)
+        func()
+        print(args)
+        print(kwargs)
+        
+    return wrapper
+    
+
+
+@my_dec_args
+def f2():
+    print('hello form f2()')
+    
+f2(31,23,12,3, aaaa=2312, bbb=3)
