@@ -89,6 +89,7 @@ print(b) # 20
 
 from copy import copy, deepcopy
 from tkinter.tix import TList
+
 some = [1, [2] ,3]
  
 print(some[1] is copy(some)[1]) # True
@@ -484,7 +485,7 @@ list_1 = [i * 10 for i in range(10)]
 print(list_1)
 
 
-def next_cube():
+def next_cube()->int:
     number = 1
     while True:
         yield number**3
@@ -498,7 +499,7 @@ for i in next_cube():
 
 
 
-def gen2():
+def gen2()->tuple:
     a = 1
     b = 2
     while True:
@@ -514,3 +515,16 @@ for i in gen2():
     
     
 print('-'*50)
+
+
+
+# КОРУТИНЫ
+def my_coroutine(word):
+    while True:
+        line = yield
+        if word in line:
+            yield line
+            
+search = my_coroutine('me')
+next(search) # стартуем корутину
+print(search.send('Hello me')) 
