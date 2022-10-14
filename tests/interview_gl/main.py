@@ -339,3 +339,27 @@ def f1():
 
 dec_func_1 = decorator(f1)
 dec_func_1(1,2,3)
+
+
+
+
+
+# АБСТРАКТНЫЙ КЛАСС И МЕТОДЫ
+from abc import ABC, abstractmethod
+
+class A(ABC):
+    @abstractmethod
+    def some():pass
+
+class B(A):
+    def some():pass
+
+a = B()
+
+
+# МЕТА КЛАСС
+from abc import ABCMeta
+class OneMeta(ABCMeta):
+    pass
+class TwoMeta(type):
+    pass
