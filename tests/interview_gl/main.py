@@ -244,8 +244,35 @@ obj.show_word()
 
 
 
+print('-'*50)
 
 
+
+
+
+class A3:
+    some_value = 0 # public
+    _some_value = 0 # protected (виден из класса и классов его наследующих)
+    
+    def a(self): # метод объекта 
+        pass
+    
+    @classmethod
+    def b(cls): # метод класса
+        print(cls.num)
+        pass
+    
+    @staticmethod
+    def c(): 
+        print(31313)
+        pass
+    
+   
+class A3(A3):
+    pass
+
+a = A3()
+print(a.some_value)
 
 
 
