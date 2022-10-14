@@ -312,9 +312,30 @@ def my_dec_args(func):
     return wrapper
     
 
-
 @my_dec_args
 def f2():
     print('hello form f2()')
     
-f2(31,23,12,3, aaaa=2312, bbb=3)
+f2(31,23,12,3, aaaa=2312)
+
+
+
+
+
+
+print('-'*50)
+# без синтаксического сахара
+def decorator(f):
+    def wrp(*args, **kwargs):
+        print(1)
+        f()
+        print(2)
+        print(args)
+        print(kwargs)
+    return wrp
+
+def f1():
+    print('f1')
+
+dec_func_1 = decorator(f1)
+dec_func_1(1,2,3)
