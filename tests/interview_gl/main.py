@@ -495,3 +495,17 @@ for i in next_cube():
     print(i)
     counter += 1
     if counter > 10: break
+
+
+
+def gen2():
+    a = 1
+    b = 2
+    while True:
+        yield a,b
+        a, b = b, a + b
+
+for i in gen2():
+    print(i)
+    a = input()
+    if a == 'q': break
