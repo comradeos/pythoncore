@@ -505,7 +505,12 @@ def gen2():
         yield a,b
         a, b = b, a + b
 
+counter = 0
 for i in gen2():
+    counter += 1
     print(i)
-    a = input()
-    if a == 'q': break
+    if counter > 10: break
+    
+    
+    
+print('-'*50)
