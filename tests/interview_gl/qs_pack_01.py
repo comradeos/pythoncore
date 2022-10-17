@@ -189,3 +189,12 @@ def my_func_arg():
 # b = dec(my_func_arg)
 # b()
 
+
+from abc import ABC, abstractmethod
+
+
+class A(ABC):
+    @abstractmethod
+    def my_abstract_method(self):
+        pass
+
