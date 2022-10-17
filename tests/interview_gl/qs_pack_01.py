@@ -109,9 +109,25 @@ print(b)
 
 # виртуальная среда venv
 # python -m venv my_env
-#
-#
-#
-#
-#
-#
+
+
+class A:
+    public_var: str
+    _static_var: int
+    __private_var: float
+
+    def __init__(self, public_var: str = 'a', static_var: int = 1, private_var: float = 1.0,):
+        self.public_var = public_var
+        self._static_var = static_var
+        self.__private_var = private_var
+
+    @classmethod
+    def my_class_method(cls):
+        print('classmethod')
+
+    @staticmethod
+    def my_static_method():
+        print('staticmethod')
+
+
+A.my_static_method()
