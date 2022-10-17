@@ -134,3 +134,29 @@ A.my_static_method()
 a = A()
 print(a._A__private_var)
 
+print('-' * 100)
+
+# декораторы
+
+
+def my_decorator(some_func):
+    def wrapper(*args, **kwargs):
+        print('A..')
+        some_func()
+        print('..B')
+        print(args, kwargs)
+
+    return wrapper
+
+
+@my_decorator
+def my_func():
+    print('my_func')
+
+
+my_func(1, 2, 3, hello='world')
+
+# res = my_decorator(my_func)
+# res() # без использования синт. сахара
+
+
