@@ -113,12 +113,12 @@ print(b)
 
 class A:
     public_var: str
-    _static_var: int
+    _protected_var: int = 231
     __private_var: float
 
-    def __init__(self, public_var: str = 'a', static_var: int = 1, private_var: float = 1.0,):
+    def __init__(self, public_var: str = 'a', protected_var: int = 1, private_var: float = 1.0,):
         self.public_var = public_var
-        self._static_var = static_var
+        self._protected_var = protected_var
         self.__private_var = private_var
 
     @classmethod
@@ -131,3 +131,6 @@ class A:
 
 
 A.my_static_method()
+a = A()
+print(a._A__private_var)
+
