@@ -72,4 +72,13 @@ class A:
 a = A()
 A.some_func(231)
 
+my_list = [1, 2, 3]
+print(my_list)
+my_list = map(lambda x: x + 10, my_list)
+my_list = list(my_list)
+print(my_list)
+
+
+my_list = filter(lambda x: x > 12, my_list)
+print(list(my_list))
 
