@@ -178,10 +178,14 @@ def my_decorator_args(arg=1):
     return decorator
 
 
-@my_decorator_args(777)
+# @my_decorator_args(777)
 def my_func_arg():
     print('my_func')
 
 
-my_func_arg(1, 2, 3, hello='world')
+# my_func_arg(1, 2, 3, hello='world')
+
+# dec = my_decorator_args(123)
+# b = dec(my_func_arg)
+# b()
 
