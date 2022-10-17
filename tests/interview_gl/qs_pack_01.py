@@ -72,13 +72,37 @@ class A:
 a = A()
 A.some_func(231)
 
+# лямбда функция
+
 my_list = [1, 2, 3]
 print(my_list)
 my_list = map(lambda x: x + 10, my_list)
 my_list = list(my_list)
 print(my_list)
 
-
 my_list = filter(lambda x: x > 12, my_list)
 print(list(my_list))
 
+# тернарный оператор
+a = 10
+b = 'a' if a == 10 else 'b'
+print(b)
+
+# глубокая и поверхностная копии
+import copy
+
+a = [1, 2, 3]
+b = copy.copy(a)  # поверхностная
+b[0] = 777
+print(a)
+print(b)
+
+a = [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+]
+b = copy.deepcopy(a)  # глубокая
+b[0][0] = 777
+print(a)
+print(b)
