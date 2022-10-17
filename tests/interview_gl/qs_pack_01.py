@@ -106,3 +106,12 @@ b = copy.deepcopy(a)  # глубокая
 b[0][0] = 777
 print(a)
 print(b)
+
+# виртуальная среда venv
+# python -m venv my_env
+#
+#
+#
+#
+#
+#
