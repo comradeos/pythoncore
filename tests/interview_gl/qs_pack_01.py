@@ -36,7 +36,7 @@ some_string = ''.join(some_string)  # объединить элементы сп
 print(some_string)
 
 a = 'A'
-print(a.replace('A', 'B'))  # заменить
+print(a.replace('A', 'B'))  # заменить в строке
 
 my_list = [1, 2, 3]
 
@@ -57,3 +57,19 @@ def my_func(some_str: str) -> None:
 
 my_func(my_str)
 print(my_str)
+
+
+# анотации типов
+class A:
+    prop_a: list
+    prop_b: int
+
+    @staticmethod  # статический метод
+    def some_func(some_int: int) -> None:
+        print(some_int)
+
+
+a = A()
+A.some_func(231)
+
+
