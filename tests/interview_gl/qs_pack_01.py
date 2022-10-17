@@ -107,6 +107,7 @@ b[0][0] = 777
 print(a)
 print(b)
 
+
 # виртуальная среда venv
 # python -m venv my_env
 
@@ -116,7 +117,7 @@ class A:
     _protected_var: int = 231
     __private_var: float
 
-    def __init__(self, public_var: str = 'a', protected_var: int = 1, private_var: float = 1.0,):
+    def __init__(self, public_var: str = 'a', protected_var: int = 1, private_var: float = 1.0, ):
         self.public_var = public_var
         self._protected_var = protected_var
         self.__private_var = private_var
@@ -135,6 +136,7 @@ a = A()
 print(a._A__private_var)
 
 print('-' * 100)
+
 
 # декораторы
 
@@ -156,7 +158,30 @@ def my_func():
 
 my_func(1, 2, 3, hello='world')
 
+
 # res = my_decorator(my_func)
 # res(1, 2, 3, a='b') # без использования синт. сахара
 
+
+# декоратор с пробросом аргументов
+def my_decorator_args(arg=1):
+    def decorator(some_func):
+        def wrapper(*args, **kwargs):
+            print('A..')
+            some_func()
+            print('..B')
+            print(args, kwargs)
+            print(arg)
+
+        return wrapper
+
+    return decorator
+
+
+@my_decorator_args(777)
+def my_func_arg():
+    print('my_func')
+
+
+my_func_arg(1, 2, 3, hello='world')
 
