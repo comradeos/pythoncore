@@ -157,6 +157,6 @@ def my_func():
 my_func(1, 2, 3, hello='world')
 
 # res = my_decorator(my_func)
-# res() # без использования синт. сахара
+# res(1, 2, 3, a='b') # без использования синт. сахара
 
 
