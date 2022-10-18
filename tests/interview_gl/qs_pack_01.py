@@ -206,7 +206,8 @@ print(A.__mro__)  # Method Resolution Order
 #     MAX_COORD = 100
 #     MIN_COORD = 0
 
-class A: pass
+class A:
+    pass
 
 
 A = type('Point', (), {'MAX_COORD': 100, 'MIN_COORD': 0})
@@ -214,13 +215,16 @@ a = A()
 print(a.MAX_COORD)
 
 
-class A1: pass
+class A1:
+    pass
 
 
-class B1: pass
+class B1:
+    pass
 
 
-class C1(A1, B1): pass
+class C1(A1, B1):
+    pass
 
 
 print(C1.__mro__)
