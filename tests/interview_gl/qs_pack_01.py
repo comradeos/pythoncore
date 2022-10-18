@@ -228,3 +228,7 @@ class C1(A1, B1):
 
 
 print(C1.__mro__)
+
+
+
+
