@@ -199,4 +199,11 @@ class A(ABC):
         pass
 
 
+# class Point:
+#     MAX_COORD = 100
+#     MIN_COORD = 0
 
+class A: pass
+A = type('Point', (), {'MAX_COORD': 100, 'MIN_COORD': 0})
+a = A()
+print(a.MAX_COORD)
