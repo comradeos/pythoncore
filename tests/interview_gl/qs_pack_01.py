@@ -227,7 +227,8 @@ class C1(A1, B1):
     pass
 
 
-print(C1.__mro__)
+print(C1.__mro__)  # Method Resolution Order
+
 
 
 
