@@ -1,0 +1,8 @@
+создать виртуальную среду
+python -m venv my_venv
+
+активировать виртуальную стреду
+.\my_venv\Scripts\activate
+
+установить зависимости
+pip install -r requirements.txt
