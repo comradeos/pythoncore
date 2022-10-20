@@ -230,6 +230,18 @@ class C1(A1, B1):
 print(C1.__mro__)  # Method Resolution Order
 
 
+print('-'*100)
 
 
+class A777:
+    class B777:
+        class C777:
+            def hello(self):
+                print('> hello()')
 
+        c = C777()
+        c.hello()
+    b = B777()
+
+
+a = A777()
