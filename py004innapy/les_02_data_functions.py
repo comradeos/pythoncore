@@ -1,5 +1,9 @@
 def lesson02():
     a = 7
+    a = 6.7
+    b = 'hi'
+    b = 0
+    b = -23.1
     print(a)
     var_a = 'hello'
-    print(var_a)
+    print(var_a, a, b)
