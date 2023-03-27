@@ -21,3 +21,14 @@ def lesson02():
     print(a, b)
     a, b = b, a
     print(a, b)
+
+    print(type(12))
+    print(type(2.3))
+    print(type('string'))
+
+    x = 7.3
+    s = "python"
+
+    print(type(x), type(s))
+
+    
