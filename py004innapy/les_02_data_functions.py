@@ -7,3 +7,10 @@ def lesson02():
     print(a)
     var_a = 'hello'
     print(var_a, a, b)
+
+    a = b = c = 0
+    print(a, b, c)
+    print(id(a))
+    print(id(b))
+    print(id(c))
+    
