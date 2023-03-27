@@ -1,3 +1,6 @@
+import builtins
+
+
 def lesson02():
     a = 7
     a = 6.7
@@ -31,4 +34,5 @@ def lesson02():
 
     print(type(x), type(s))
 
-    
+    # print = 123
+    builtins.print(222)
