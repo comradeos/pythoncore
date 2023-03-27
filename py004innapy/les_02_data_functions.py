@@ -13,4 +13,11 @@ def lesson02():
     print(id(a))
     print(id(b))
     print(id(c))
-    
+
+    a, b = 1, 2
+    print(id(a), id(b))
+
+    a, b = 1, 2
+    print(a, b)
+    a, b = b, a
+    print(a, b)
