@@ -1,1 +1,6 @@
-print(123)
+print(2 + 2)
+print(2 - 1)
+print(10 / 5)
+print(10 // 3)
+print(10 % 3)
+print(-9 % 5)  # -9 - (-10)
