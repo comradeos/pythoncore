@@ -30,7 +30,7 @@ def lesson02():
     print(type('string'))
 
     x = 7.3
-    s = "python"
+    s = "pythons"
 
     print(type(x), type(s))
 
