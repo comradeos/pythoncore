@@ -18,3 +18,5 @@ print(math.floor(-2.6))
 print(math.factorial(3))
 print(math.trunc(32.123))
 
+print(math.log(4, 2))
+
