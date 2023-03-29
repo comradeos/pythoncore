@@ -25,7 +25,11 @@ print(f"x = {x} y = {y}")
 a = float("2.32")
 print(a, type(a))
 
-a = float(input("a = "))
-b = float(input("b = "))
+# a = float(input("a = "))
+# b = float(input("b = "))
+# c = 2 * (a + b)
+# print(c, type(c))
+
+a, b = map(float, input("a, b = ").split())
 c = 2 * (a + b)
 print(c, type(c))
