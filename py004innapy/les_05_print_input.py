@@ -15,3 +15,8 @@ print()
 x = 123
 y = 321
 print(f"x = {x} y = {y}")
+
+
+a = input("Input something: ")
+print(a, type(a))
+
