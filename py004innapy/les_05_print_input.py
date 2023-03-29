@@ -10,3 +10,8 @@ print("World")
 b = "ads"
 
 print("aaaa", end=b)
+print()
+
+x = 123
+y = 321
+print(f"x = {x} y = {y}")
