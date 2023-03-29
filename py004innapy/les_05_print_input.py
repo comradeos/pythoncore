@@ -6,3 +6,7 @@ print()
 
 print("Hello", end=" ")
 print("World")
+
+b = "ads"
+
+print("aaaa", end=b)
