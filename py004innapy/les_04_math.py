@@ -8,3 +8,10 @@ print(round(0.5))
 print(round(11.5))
 
 print(round(123.3, -1))
+
+print(math.ceil(2.6))
+print(math.ceil(-2.6))
+
+print(math.floor(2.6))
+print(math.floor(-2.6))
+
