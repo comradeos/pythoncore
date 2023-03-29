@@ -17,6 +17,15 @@ y = 321
 print(f"x = {x} y = {y}")
 
 
-a = input("Input something: ")
+# a = input("Input something: ")
+# a = int(a)
+# b = abs(a)
+# print(a, type(a))
+
+a = float("2.32")
 print(a, type(a))
 
+a = float(input("a = "))
+b = float(input("b = "))
+c = 2 * (a + b)
+print(c, type(c))
