@@ -1,1 +1,6 @@
-print(2 > 1)
+a = 10
+b = 7
+
+print(a > b)
+print(a >= b)
+
