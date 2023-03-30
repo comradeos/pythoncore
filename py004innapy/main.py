@@ -7,4 +7,3 @@ import les_06_bool_and_or_not
 
 if __name__ == '__main__':
     print()
-
