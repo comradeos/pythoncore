@@ -7,3 +7,19 @@ s3 = """Hello
 print(s1)
 print(s2)
 print(s3)
+
+s1 = "I love"
+s2 = "Python language"
+
+print(s1 + " " + s2)
+print("hello " + str(7))
+
+print("xa " * 5)
+
+print("-" * 80)
+
+print(len("aaa"))
+
+
+print("ab" in "abracadabra")
+
