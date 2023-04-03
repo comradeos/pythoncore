@@ -18,8 +18,20 @@ print("xa " * 5)
 
 print("-" * 80)
 
+
 print(len("aaa"))
 
 
 print("ab" in "abracadabra")
+
+a = "hello"
+print(a == "hello")
+print(a != "Hello")
+
+
+print("-" * 80)
+print("abc" < "bbc")
+
+print(ord('к'))
+print(ord('К'))
 
