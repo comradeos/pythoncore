@@ -14,3 +14,10 @@ print(id(s[:]))
 
 s = "abcdefgh"
 print(s[1:7:2])  # bdf
+
+a = "abc"
+print(a[::-1])  # inverted
+
+s1 = "hello"
+s2 = "H" + s1[1:]
+print(s2)
