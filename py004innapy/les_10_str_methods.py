@@ -28,9 +28,17 @@ print(s.isalpha())
 s = "123"
 print(s.isdigit())
 
-print("abc".rjust(__width=5, __fillchar="-"))
+print("abc".rjust(5, "-"))
 
-print("12".rjust(__width=4, __fillchar="0"))
-print("12".ljust(__width=4, __fillchar="0"))
+print("12".rjust(4, "0"))
+print("12".ljust(4, "0"))
 
 print("Ivanov Ivan Ivanovich".split(sep=" "))
+
+digs = "1 , 2,, 3,    4, 5,,7,8,   9"
+digs = digs.replace(" ", "")
+print(digs.split(sep=","))
+
+d = digs.split(sep=",")
+
+print(", ".join(d))
