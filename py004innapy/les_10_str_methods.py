@@ -27,3 +27,5 @@ print(s.isalpha())
 
 s = "123"
 print(s.isdigit())
+
+print("abc".rjust(5, "-"))
