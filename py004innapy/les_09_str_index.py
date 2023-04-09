@@ -11,3 +11,4 @@ s = "abc"
 print(s[1:2])  # last index not included
 print(id(s))
 print(id(s[:]))
+
