@@ -29,3 +29,6 @@ s = "123"
 print(s.isdigit())
 
 print("abc".rjust(5, "-"))
+
+print("12".rjust(4, "0"))
+print("12".ljust(4, "0"))
