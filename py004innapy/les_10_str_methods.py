@@ -42,3 +42,7 @@ print(digs.split(sep=","))
 d = digs.split(sep=",")
 
 print(", ".join(d))
+
+print("   abc   \n".strip())
+print("   abc   \n".rstrip())
+print("   abc   \n".lstrip())
