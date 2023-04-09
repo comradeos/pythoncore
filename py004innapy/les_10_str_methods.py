@@ -24,3 +24,6 @@ print(s.isalpha())
 
 s = "abc23"
 print(s.isalpha())
+
+s = "123"
+print(s.isdigit())
