@@ -17,3 +17,4 @@ print(s.rfind("br", 2))
 
 s = "abcd abcd abcd"
 print(s.replace("a", "@"))
+print(s.replace("a", "@", 2))
