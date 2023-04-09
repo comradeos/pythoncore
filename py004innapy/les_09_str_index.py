@@ -12,3 +12,5 @@ print(s[1:2])  # last index not included
 print(id(s))
 print(id(s[:]))
 
+s = "abcdefgh"
+print(s[1:7:2])  # bdf
