@@ -7,7 +7,8 @@
 # import les_07_string_ops
 # import les_09_str_index
 # import les_10_str_methods
-import les_11_special_chars
+# import les_11_special_chars
+import les_12_string_format
 
 if __name__ == '__main__':
     print()
