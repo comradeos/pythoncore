@@ -6,7 +6,8 @@
 # import les_06_bool_and_or_not
 # import les_07_string_ops
 # import les_09_str_index
-import les_10_str_methods
+# import les_10_str_methods
+import les_11_special_chars
 
 if __name__ == '__main__':
     print()
