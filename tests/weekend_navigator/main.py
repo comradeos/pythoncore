@@ -48,3 +48,5 @@ print(f"Шукаємо інформацію в Інтернеті про {random
 make_intrigue()
 
 webbrowser.open(f"https://www.google.com/search?q=Київ+\"{random_location}\"+цікаві+місця")
+print(f"Готово, приємної подорожі!")
+input()
