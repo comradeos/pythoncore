@@ -6,17 +6,18 @@ with open("loc_d") as file:
 with open("loc_v") as file:
     v = file.read().splitlines()
 
-d_updated =
+d_updated = list(set(d)-set(v))
 
-print(d)
+print(d_updated)
 
-r = random.choice(d)
+try:
+    r = random.choice(d_updated)
+except:
+    print("that's all")
+    exit(0)
 
 print(f"-> {r}")
 
 with open("loc_v", mode='a') as file:
     v = file.write(f"{r}" + "\n")
 
-
-
-print(v)
