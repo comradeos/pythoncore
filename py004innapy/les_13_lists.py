@@ -12,3 +12,8 @@ print(min(my_list))
 print(max(my_list))
 print(sorted(my_list))
 print(sorted(my_list, reverse=True))
+
+s = list("python")
+print(max(s))
+print(min(s))
+
