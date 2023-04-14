@@ -1,5 +1,6 @@
-import random
+import os
 import time
+import random
 import webbrowser
 
 
@@ -13,15 +14,19 @@ def set_visited(location: str) -> None:
         f.write(f"{location}" + "\n")
 
 
-def make_intrigue() -> None:
+def make_intrigue(text: str) -> None:
+    print(f"{text}", end='', flush=True)
     dots_number = random.randint(3, 7)
     for i in range(dots_number):
         time.sleep(1)
-        print(".", end='')
+        print(".", end='', flush=True)
     print("\n")
 
 
-print("Навігатор \"Кудись ХЗ-1\"")
+os.chdir(os.path.dirname(__file__))
+
+print("\n\n*** Навігатор \"Кудись-2\" ***\n\n")
+time.sleep(1)
 
 locations_all = get_locations("locations_all")
 locations_visited = get_locations("locations_visited")
@@ -35,8 +40,7 @@ if len(locations_updated) == 0:
     print("Всі маршрути відвідані, час поновити :)")
     exit(0)
 
-print("Обираємо маршрут", end='')
-make_intrigue()
+make_intrigue("Обираємо маршрут")
 
 random_location = random.choice(locations_updated)
 
@@ -44,8 +48,7 @@ print(f"Маршрут обрано! Сьогодні випало відвід�
 set_visited(random_location)
 print()
 
-print(f"Шукаємо інформацію в Інтернеті про {random_location}", end='')
-make_intrigue()
+make_intrigue(f"Шукаємо інформацію в Інтернеті про {random_location}")
 
 webbrowser.open(f"https://www.google.com/search?q=Київ+\"{random_location}\"+цікаві+місця")
 print(f"Готово, приємної подорожі!")
