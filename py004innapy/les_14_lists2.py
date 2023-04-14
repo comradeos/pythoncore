@@ -11,3 +11,5 @@ c = b
 print("-" * 10)
 print(id(b))
 print(id(c))
+
+print(a[1::2])
