@@ -17,3 +17,8 @@ s = list("python")
 print(max(s))
 print(min(s))
 
+
+a = [1, 2, 3]
+b = [2, 3]
+print(set(a) - set(b))
+
