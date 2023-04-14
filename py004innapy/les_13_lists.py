@@ -3,3 +3,4 @@ marks = [1, 2, 3, 4, 5]
 
 print(sum(marks)/len(marks))
 
+print(list(["a", 2, True]))
