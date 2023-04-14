@@ -5,18 +5,35 @@ import webbrowser
 
 
 def get_locations(filename: str) -> list:
+    """
+    Get list of locations stored in file
+    :param filename: name of file
+    :return: list
+    """
     with open(filename, mode="r", encoding="utf-8") as f:
         return list(f.read().splitlines())
 
 
 def set_visited(location: str) -> None:
+    """
+    Add location to file with visited locations
+    :param location: name of location
+    :return: None
+    """
     with open("locations_visited", mode="a", encoding="utf-8") as f:
         f.write(f"{location}" + "\n")
 
 
 def make_intrigue(text: str) -> None:
+    """
+    Holds screen with dots after message
+    :param text: the message
+    :return: None
+    """
     print(f"{text}", end='', flush=True)
+
     dots_number = random.randint(3, 7)
+
     for i in range(dots_number):
         time.sleep(1)
         print(".", end='', flush=True)
