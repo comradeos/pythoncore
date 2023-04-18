@@ -12,7 +12,7 @@ async def main():
 
 async def other_function():
     print("1")
-    await asyncio.sleep(2)
+    await asyncio.sleep(12)
     print("2")
     return 10
 
