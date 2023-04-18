@@ -8,7 +8,7 @@ def get_locations(filename: str) -> list:
     """
     Get list of locations stored in file
     :param filename: name of file
-    :return: list
+    :return: list 2
     """
     with open(filename, mode="r", encoding="utf-8") as f:
         return list(f.read().splitlines())
