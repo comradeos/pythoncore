@@ -14,6 +14,8 @@ sleep(1)
 t1.start()
 
 while True:
+    print(".")
+    sleep(0.5)
     if not t1.is_alive() and not t2.is_alive():
         print("that's all")
         break
