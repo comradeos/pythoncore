@@ -32,7 +32,9 @@ print(2 in c)
 print(2 in [3, 4, 5])
 
 a = [1, 2, 3]
-b = a.reverse()
+a.reverse()
+b = a.copy()
+a.reverse()
 
 print(a, id(a))
 print(b, id(b))
