@@ -28,4 +28,6 @@ print(c.count(1))  # 2
 print(c.index(2))  # 2
 print(c.index(2, 3))  # 5
 
+print(2 in c)
+print(2 in [3, 4, 5])
 
