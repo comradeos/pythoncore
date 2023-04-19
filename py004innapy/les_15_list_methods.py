@@ -16,3 +16,8 @@ print(my_list)
 print(my_list.pop())
 print(my_list)
 
+a = [1, 2, 3]
+b = a.copy()
+a[0]= "A"
+print(a)
+print(b)
