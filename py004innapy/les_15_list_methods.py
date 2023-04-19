@@ -31,3 +31,9 @@ print(c.index(2, 3))  # 5
 print(2 in c)
 print(2 in [3, 4, 5])
 
+a = [1, 2, 3]
+b = a.reverse()
+
+print(a, id(a))
+print(b, id(b))
+
