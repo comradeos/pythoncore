@@ -10,7 +10,8 @@
 # import les_11_special_chars
 # import les_12_string_format
 # import les_13_lists
-import les_14_lists2
+# import les_14_lists2
+import les_15_list_methods
 
 if __name__ == '__main__':
     print()
