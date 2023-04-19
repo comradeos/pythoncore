@@ -22,5 +22,10 @@ a[0] = "A"
 print(a)
 print(b)
 
-c = [1, 1, 2]
-print(c.count(1))
+c = [1, 1, 2, 5, 4, 2]
+print(c.count(1))  # 2
+
+print(c.index(2))  # 2
+print(c.index(2, 3))  # 5
+
+
