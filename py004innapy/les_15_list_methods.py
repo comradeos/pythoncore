@@ -18,6 +18,9 @@ print(my_list)
 
 a = [1, 2, 3]
 b = a.copy()
-a[0]= "A"
+a[0] = "A"
 print(a)
 print(b)
+
+c = [1, 1, 2]
+print(c.count(1))
