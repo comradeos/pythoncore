@@ -12,3 +12,7 @@ print(my_list)
 
 my_list.remove(True)
 print(my_list)
+
+print(my_list.pop())
+print(my_list)
+
