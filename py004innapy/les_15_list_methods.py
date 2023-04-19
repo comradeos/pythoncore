@@ -7,3 +7,5 @@ print(my_list)
 my_list.append(True)
 print(my_list)
 
+my_list.insert(2, 50)
+print(my_list)
