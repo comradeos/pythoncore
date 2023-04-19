@@ -9,3 +9,6 @@ print(my_list)
 
 my_list.insert(2, 50)
 print(my_list)
+
+my_list.remove(True)
+print(my_list)
