@@ -29,14 +29,4 @@ async def main():
         
     print(my_list[0:5])
     
-# asyncio.run(main())
-
-def get_key_by_value(target_dict:dict, target_value:int)->str:
-    for key, value in target_dict.items():
-        if value == target_value:
-            return key
-    return None
-
-a = [1,2,3]
-a = [x * 2 for x in a]
-print(a)
+asyncio.run(main())
