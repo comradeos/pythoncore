@@ -3,5 +3,6 @@ class MyClass:
        word = "word"
 
 obj = MyClass()
+
 print(obj.number)
 print(obj.word)
