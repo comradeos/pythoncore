@@ -353,6 +353,6 @@ def main():
         os.system("git commit . -m updated")
         
     os.system("git push --all")
-
+    input()
 if __name__ == "__main__":
     main()
