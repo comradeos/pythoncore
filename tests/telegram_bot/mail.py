@@ -17,7 +17,7 @@ messages = [
 ]
 
 async def send_message(msg:str):
-    bot = Bot(token='secret token')
+    bot = Bot(token='secret')
     try:
         await bot.send_message(chat_id='@raspmsg', text=msg)
     finally:
