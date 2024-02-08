@@ -1,0 +1,29 @@
+[bluetooth]# scan on
+Discovery started
+[CHG] Controller 8C:87:0B:00:06:63 Discovering: yes
+[CHG] Device 40:20:72:D2:20:FD RSSI: -98
+[CHG] Device 40:20:72:D2:20:FD TxPower: 12
+[CHG] Device 40:20:72:D2:20:FD ManufacturerData Key: 0x004c
+[CHG] Device 40:20:72:D2:20:FD ManufacturerData Value:
+  10 07 7b 1f 82 32 02 68 68                       ..{..2.hh
+[CHG] Device 76:DC:9A:2B:45:39 RSSI: -82
+[CHG] Device 76:DC:9A:2B:45:39 TxPower: 12
+[CHG] Device 7B:60:55:3C:DA:DF RSSI: -102
+[CHG] Device 7B:60:55:3C:DA:DF ManufacturerData Key: 0x004c
+[CHG] Device 7B:60:55:3C:DA:DF ManufacturerData Value:
+  10 06 00 19 80 3d c1 58                          .....=.X
+[CHG] Device 4A:59:2C:07:0E:83 RSSI: -80
+[CHG] Device 4A:59:2C:07:0E:83 TxPower: 11
+[CHG] Device 63:A7:4C:3B:AF:FB RSSI: -100
+[CHG] Device 63:A7:4C:3B:AF:FB TxPower: 12
+[CHG] Device 50:E0:85:8E:F6:D8 RSSI: -80
+[CHG] Device 50:E0:85:8E:F6:D8 TxPower: 12
+[CHG] Device F4:C2:48:7C:01:85 LegacyPairing: yes
+[CHG] Device F4:C2:48:7C:01:85 RSSI: -56
+[CHG] Device 6F:D9:14:42:9C:1A RSSI: -100
+[CHG] Device 6F:D9:14:42:9C:1A TxPower: 12
+[CHG] Device F4:C2:48:7C:01:85 LegacyPairing: no
+[CHG] Device 66:18:DD:B5:92:A2 RSSI: -80
+[CHG] Device 5C:ED:92:65:9F:42 RSSI: -70
+[CHG] Device 6C:F0:4A:88:5C:17 RSSI: -98
+[CHG] Device 77:7B:9A:DA:BC:0E RSSI: -104
