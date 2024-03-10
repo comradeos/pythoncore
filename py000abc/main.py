@@ -1,5 +1,4 @@
 import collections
-import re
 
 
 def main():
@@ -7,8 +6,7 @@ def main():
     c = collections.Counter(a)
     # print(c)
     sent = "Hello, world! How are you?"
-    words = re.findall("\w+", sent)
-    print(words)
+    print(sent.split())
     pass
 
 
