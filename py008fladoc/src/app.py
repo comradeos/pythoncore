@@ -21,7 +21,7 @@ def hello() -> tuple:
     if request.args.get("user") == "missing":
         raise UserNotFoundError()
 
-    return jsonify({"result": True, "data": "hello world"}), 200
+    return jsonify({"result": True, "data": "hello world 1"}), 200
 
 
 if __name__ == "__main__":
