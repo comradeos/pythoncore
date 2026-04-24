@@ -1,0 +1,65 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: odoo
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo -d odoo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  device-api:
+    build:
+      context: ./mock_api
+    ports:
+      - "8080:8080"
+
+  odoo-init:
+    image: odoo:17
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      HOST: db
+      USER: odoo
+      PASSWORD: odoo
+    command:
+      - odoo
+      - -d
+      - odoo
+      - -i
+      - base
+      - --without-demo=all
+      - --stop-after-init
+    restart: "no"
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - odoo_data:/var/lib/odoo
+
+  odoo:
+    image: odoo:17
+    depends_on:
+      db:
+        condition: service_healthy
+      device-api:
+        condition: service_started
+      odoo-init:
+        condition: service_completed_successfully
+    ports:
+      - "8069:8069"
+    environment:
+      HOST: db
+      USER: odoo
+      PASSWORD: odoo
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - odoo_data:/var/lib/odoo
+
+volumes:
+  db_data:
+  odoo_data:
